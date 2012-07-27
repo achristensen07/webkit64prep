@@ -4,11 +4,11 @@ but this can probably be changed by changing the beginnings of the perl files an
 These instructions assume webkit builds on your computer.
 
 1) revert and clean (remove all unversioned files) WinCairoDependencies and webkit repositories
-2) run perl scripts (webkit one twice - sometimes it doesn't work the first time)
-3) compile WinCairo_vc8.sln twice (yes, twice) with Release x64 configuration
-4) copy libs (don't forget libpng.lib) to webkit/WebKitLibraries/win/lib
-5) compile WebKit.sln with Release_Cairo_CFLite x64 configuration
-6) copy dlls from WinCairoDependencies/Bin to webkit/WebKitBuild/Release_Cairo_CFLite/bin overwriting any dlls (they're probably 32 bit dlls)
+2) run both perl scripts
+3) build WinCairo_vc8.sln with Release x64 configuration
+4) copy libs (don't forget libpng.lib from bin) to webkit/WebKitLibraries/win/lib
+5) build WebKit.sln with Release_Cairo_CFLite x64 configuration, copy WebCoreTestSupport.lib from webkit/WebKitBuild/Release_Cairo_CFLite/bin to lib, and build the solution again
+6) copy dlls from WinCairoDependencies/Bin to webkit/WebKitBuild/Release_Cairo_CFLite/bin overwriting any dlls (they're mostly 32 bit dlls somehow)
 7) with regedit, add a new key at "Computer/HKEY_LOCAL_MACHINE/SOFTWARE/Apple Computer, Inc./Safari" with a new string value named InstallDir with value data "C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\bin" (without the quotes)
 8) with regedit, add a new key at "Computer/HKEY_LOCAL_MACHINE/SOFTWARE/Apple Inc./Apple Application Support" with a new string value named InstallDir with value data "C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\bin" (without the quotes)
 9) run WinLauncher

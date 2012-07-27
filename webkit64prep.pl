@@ -26,17 +26,12 @@ replaceLines("$webkitdir/Source/WebCore/platform/win/ClipboardWin.h",           
                                                                                         723,"    unsigned maxSize = min(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));","    unsigned maxSize = min<unsigned>(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));"));
 replaceLines("$webkitdir/Source/WebCore/platform/win/ClipboardWin.cpp",                (273,"    int maxSize = min(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));","    int maxSize = min<size_t>(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));",
 																						723,"    unsigned maxSize = min(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));","    unsigned maxSize = min<size_t>(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));"));
-replaceLines("$webkitdir/Source/WebCore/platform/win/ClipboardUtilitiesWin.cpp",       (273,"    int maxSize = std::min<size_t>(pathname.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));","    int maxSize = std::min<size_t>(pathname.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));"));
 replaceLines("$webkitdir/Source/WebCore/platform/PlatformMouseEvent.h",                (46,"typedef unsigned WPARAM;","",
                                                                                         47,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
 replaceLines("$webkitdir/Source/WebCore/platform/PlatformWheelEvent.h",                (42,"typedef unsigned WPARAM;","",
                                                                                         43,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
 replaceLines("$webkitdir/Source/WebCore/platform/PlatformKeyboardEvent.h",             (40,"typedef unsigned WPARAM;","",
                                                                                         41,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
-replaceLines("$webkitdir/Source/WebCore/platform/MediaPlayerPrivateFullscreenWindow.h",(35,"typedef unsigned WPARAM;","",
-                                                                                        36,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
-replaceLines("$webkitdir/Source/WebCore/platform/WindowMessageListener.h",             (35,"typedef unsigned WPARAM;","",
-                                                                                        33,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
 replaceLines("$webkitdir/Source/WebKit2/win/WebKit2CFLite.def",                        (262,'	??1ContextDestructionObserver@WebCore@@MAE@XZ','        ??1ContextDestructionObserver@WebCore@@MEAA@XZ'));
 replaceLines("$webkitdir/Tools/WinLauncher/WinLauncher.cpp",                           (231,"    DefWebKitProc = reinterpret_cast<WNDPROC>(::GetWindowLongPtr(hMainWnd, GWL_WNDPROC));","    DefWebKitProc = reinterpret_cast<WNDPROC>(::GetWindowLongPtr(hMainWnd, GWLP_WNDPROC));",
 																						232,"    ::SetWindowLongPtr(hMainWnd, GWL_WNDPROC, reinterpret_cast<LONG_PTR>(WndProc));","    ::SetWindowLongPtr(hMainWnd, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(WndProc));",
@@ -44,9 +39,8 @@ replaceLines("$webkitdir/Tools/WinLauncher/WinLauncher.cpp",                    
 																						318,"    SetWindowLongPtr(hURLBarWnd, GWL_WNDPROC, reinterpret_cast<LONG_PTR>(MyEditProc));","    SetWindowLongPtr(hURLBarWnd, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(MyEditProc));"));
 replaceLines("$webkitdir/Source/WebCore/platform/win/WindowMessageListener.h",         (33,"typedef long LPARAM;","",
 																						35,"typedef unsigned WPARAM;","#ifdef  _WIN64\ntypedef          __int64  intptr_t;\ntypedef unsigned __int64 uintptr_t;\n#else\ntypedef          int  intptr_t;\ntypedef unsigned int uintptr_t;\n#endif"));
-replaceLines("$webkitdir/Source/WebCore/platform/win/ClipboardWin.cpp",                (723,"    unsigned maxSize = min(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));","    unsigned maxSize = min<size_t>(fsPath.length(), WTF_ARRAY_LENGTH(fgd->fgd[0].cFileName));"));
-replaceLines("$webkitdir/Tools/win/DLLLauncher/DLLLauncherMain.cpp",                   (187,'    const char* entryPointName = "_dllLauncherEntryPoint@8";','#ifdef _M_AMD64\n    const char* entryPointName = "dllLauncherEntryPoint";\n#else\n    const char* entryPointName = "_dllLauncherEntryPoint@8";\n#endif',
-																						190,'    const char* entryPointName = "_dllLauncherEntryPoint@16";','#ifdef _M_AMD64\n    const char* entryPointName = "dllLauncherEntryPoint";\n#else\n    const char* entryPointName = "_dllLauncherEntryPoint@16";\n#endif'));
+replaceLines("$webkitdir/Tools/win/DLLLauncher/DLLLauncherMain.cpp",                   (187,'    const char* entryPointName = "_dllLauncherEntryPoint@8";',"#ifdef _M_AMD64\n    const char* entryPointName = \"dllLauncherEntryPoint\";\n#else\n    const char* entryPointName = \"_dllLauncherEntryPoint\@8\";\n#endif",
+																						190,'    const char* entryPointName = "_dllLauncherEntryPoint@16";',"#ifdef _M_AMD64\n    const char* entryPointName = \"dllLauncherEntryPoint\";\n#else\n    const char* entryPointName = \"_dllLauncherEntryPoint\@16\";\n#endif"));
 
 #move new solutions
 print "moving new solutions and libraries\n";
