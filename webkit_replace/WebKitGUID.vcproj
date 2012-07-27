@@ -511,8 +511,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_Cairo_CFLite|x64"
-			OutputDirectory="C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\lib"
-			IntermediateDirectory="C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\obj64\$(ProjectName)"
+			OutputDirectory="$(SolutionDir)\..\..\..\..\WebKitBuild\Release_Cairo_CFLite\lib"
+			IntermediateDirectory="$(SolutionDir)\..\..\..\..\WebKitBuild\Release_Cairo_CFLite\obj64\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets=".\WebKitGUIDReleaseCairoCFLite.vsprops"
 			CharacterSet="1"
@@ -623,8 +623,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug_Cairo_CFLite|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
-			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			OutputDirectory="$(SolutionDir)\..\..\..\..\WebKitBuild\Debug_Cairo_CFLite\lib"
+			IntermediateDirectory="$(SolutionDir)\..\..\..\..\WebKitBuild\Debug_Cairo_CFLite\obj64\$(ProjectName)"
 			ConfigurationType="4"
 			InheritedPropertySheets=".\WebKitGUIDDebugCairoCFLite.vsprops"
 			CharacterSet="1"

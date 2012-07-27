@@ -4,6 +4,7 @@ EXPORTS
     ??0CString@WTF@@QEAA@PEBD@Z
     ??0CString@WTF@@QEAA@PEBD_K@Z
     ??0Collator@WTF@@QEAA@PEBD@Z
+	?dumpCallFrame@Interpreter@JSC@@QEAAXPEAVExecState@2@@Z
     ?description@JSValue@JSC@@QEBAPEADXZ
     ??0DateInstance@JSC@@IEAA@PEAVExecState@1@PEAVStructure@1@@Z
     ??0DefaultGCActivityCallback@JSC@@QEAA@PEAVHeap@1@@Z
