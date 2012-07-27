@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="TestWebKitAPIGenerated"
+	ProjectGUID="{45C45411-7F0E-404D-919A-4EE9BB60BE86}"
+	Keyword="MakeFileProj"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug_All|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug_All|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Production|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Production|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release_Cairo_CFLite|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release_Cairo_CFLite|x64"
+			OutputDirectory="C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\bin"
+			IntermediateDirectory="C:\cygwin\webkit\WebKitBuild\Release_Cairo_CFLite\obj64\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug_Cairo_CFLite|Win32"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug_Cairo_CFLite|x64"
+			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
+			ConfigurationType="0"
+			InheritedPropertySheets=".\TestWebKitAPIGeneratedCommon.vsprops"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd"
+				ReBuildCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd rebuild"
+				CleanCommandLine="set CONFIGURATIONBUILDDIR=$(ConfigurationBuildDir)&#x0D;&#x0A;copy-resources.cmd clean"
+				Output=""
+				PreprocessorDefinitions=""
+				IncludeSearchPath=""
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<File
+			RelativePath=".\copy-resources.cmd"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
