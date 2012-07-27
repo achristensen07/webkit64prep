@@ -152,7 +152,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin\"
 			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
 			ConfigurationType="2"
 			InheritedPropertySheets="..\..\..\..\props\common_vc8.vsprops;..\..\..\..\props\dll.vsprops;..\..\..\..\props\debug.vsprops"
@@ -190,7 +190,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="wsock32.lib Ws2_32.lib"
+				AdditionalDependencies="wsock32.lib Ws2_32.lib zdll.lib"
 				TargetMachine="17"
 			/>
 			<Tool

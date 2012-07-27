@@ -165,7 +165,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin\"
 			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops;..\..\..\..\..\props\common_vc8.vsprops;..\..\..\..\..\props\debug.vsprops"

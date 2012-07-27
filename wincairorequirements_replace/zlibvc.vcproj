@@ -105,9 +105,9 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin\"
 			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
-			ConfigurationType="1"
+			ConfigurationType="2"
 			InheritedPropertySheets="..\..\..\..\..\props\common_vc8.vsprops;..\..\..\..\..\props\debug.vsprops"
 			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
@@ -154,7 +154,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalOptions="/MACHINE:I386"
+				AdditionalDependencies="$(InputDir)\..\..\masmx64\gvmat64.obj $(InputDir)\..\..\masmx64\inffasx64.obj"
 				OutputFile="$(OutDir)\zlib1.dll"
 				ModuleDefinitionFile=".\zlibvc.def"
 				GenerateDebugInformation="false"
@@ -417,6 +417,14 @@
 				RelativePath="..\..\masmx86\inffas32.asm"
 				>
 				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Release|x64"
 					ExcludedFromBuild="true"
 					>
@@ -438,7 +446,6 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Debug|x64"
-					ExcludedFromBuild="true"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -500,6 +507,14 @@
 			<File
 				RelativePath="..\..\masmx86\match686.asm"
 				>
+				<FileConfiguration
+					Name="Debug|x64"
+					ExcludedFromBuild="true"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|x64"
 					ExcludedFromBuild="true"

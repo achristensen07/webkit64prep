@@ -62,7 +62,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin\"
 			IntermediateDirectory="$(SolutionDir)Build\$(Configuration)\$(ProjectName)"
 			ConfigurationType="10"
 			InheritedPropertySheets="..\props\common_vc8.vsprops;..\props\debug.vsprops"
