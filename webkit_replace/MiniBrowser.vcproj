@@ -426,7 +426,6 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				WarnAsError="false"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -492,6 +491,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				WarnAsError="false"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
