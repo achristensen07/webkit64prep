@@ -172,6 +172,7 @@ EXPORTS
         ?find@StringImpl@WTF@@QEAA_KPEAV12@@Z
         ?absoluteCaretBounds@FrameSelection@WebCore@@QEAA?AVIntRect@2@XZ
         ?fromUTF8WithLatin1Fallback@String@WTF@@SA?AV12@PEBE_K@Z
+		?garbageCollectDocumentResources@CachedResourceLoader@WebCore@@QEAAXXZ
         ?getCachedDOMStructure@WebCore@@YAPEAVStructure@JSC@@PEAVJSDOMGlobalObject@1@PEBUClassInfo@3@@Z
         ?getData16SlowCase@StringImpl@WTF@@AEBAPEB_WXZ
         ?getElementById@TreeScope@WebCore@@QEBAPEAVElement@2@AEBVAtomicString@WTF@@@Z
@@ -195,6 +196,7 @@ EXPORTS
         ?overrideUserPreferredLanguages@WebCore@@YAXAEBV?$Vector@VString@WTF@@$0A@@WTF@@@Z
         ?numberOfScopedHTMLStyleChildren@Node@WebCore@@QEBA_KXZ
         ?page@Document@WebCore@@QEBAPEAVPage@2@XZ
+		?pageNumberForElement@PrintContext@WebCore@@SAHPEAVElement@2@AEBVFloatSize@2@@Z
         ?paintControlTints@FrameView@WebCore@@AEAAXXZ
         ?placeholderShouldBeVisible@HTMLTextFormControlElement@WebCore@@QEBA_NXZ
         ?rangeFromLocationAndLength@TextIterator@WebCore@@SA?AV?$PassRefPtr@VRange@WebCore@@@WTF@@PEAVContainerNode@2@HH_N@Z

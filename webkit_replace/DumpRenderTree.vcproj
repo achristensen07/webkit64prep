@@ -370,6 +370,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="$(ConfigurationBuildDir)\obj64\webCoreTestSupport\JSFastMallocStatistics.obj"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -499,6 +500,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="$(ConfigurationBuildDir)\obj64\webCoreTestSupport\JSFastMallocStatistics.obj"
 				TargetMachine="17"
 			/>
 			<Tool
