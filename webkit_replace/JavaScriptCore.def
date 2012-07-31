@@ -377,6 +377,23 @@ EXPORTS
     ?writable@PropertyDescriptor@JSC@@QEBA_NXZ
     ?writeBarrier@HandleSet@JSC@@QEAAXPEAVJSValue@2@AEBV32@@Z
     ?yield@WTF@@YAXXZ
+	?toDouble@MediaTime@WTF@@QEBANXZ 
+	?toFloat@MediaTime@WTF@@QEBAMXZ 
+	?createWithDouble@MediaTime@WTF@@SA?AV12@NH@Z 
+	?createWithFloat@MediaTime@WTF@@SA?AV12@MH@Z
+    ?abs@WTF@@YA?AVMediaTime@1@AEBV21@@Z
+	?zeroTime@MediaTime@WTF@@SAAEBV12@XZ 
+	??GMediaTime@WTF@@QEBA?AV01@AEBV01@@Z
+	??HMediaTime@WTF@@QEBA?AV01@AEBV01@@Z
+	??1MediaTime@WTF@@QEAA@XZ  
+	??0MediaTime@WTF@@QEAA@AEBV01@@Z  
+	?indefiniteTime@MediaTime@WTF@@SAAEBV12@XZ 
+	?invalidTime@MediaTime@WTF@@SAAEBV12@XZ  
+    ??8MediaTime@WTF@@QEBA_NAEBV01@@Z  
+    ??MMediaTime@WTF@@QEBA_NAEBV01@@Z 
+    ??OMediaTime@WTF@@QEBA_NAEBV01@@Z  
+    ?positiveInfiniteTime@MediaTime@WTF@@SAAEBV12@XZ  
+	?negativeInfiniteTime@MediaTime@WTF@@SAAEBV12@XZ 
     WTFGetBacktrace
     WTFInvokeCrashHook
     WTFLog

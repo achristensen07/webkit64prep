@@ -305,6 +305,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="WebKit2CFLite.def"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -371,6 +372,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="WebKit2CFLite_x64.def"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -434,6 +436,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="WebKit2CFLite.def"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -501,6 +504,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="WebKit2CFLite_x64.def"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -3174,6 +3178,14 @@
 				</File>
 				<File
 					RelativePath="..\WebProcess\InjectedBundle\InjectedBundlePageContextMenuClient.h"
+					>
+				</File>
+				<File
+					RelativePath="..\WebProcess\InjectedBundle\InjectedBundlePageDiagnosticLoggingClient.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\WebProcess\InjectedBundle\InjectedBundlePageDiagnosticLoggingClient.h"
 					>
 				</File>
 				<File

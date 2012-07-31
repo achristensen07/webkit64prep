@@ -5,7 +5,7 @@ my $thisdir="/webkit64prep";
 
 chdir $webkitdir;
 print "updating and installing wincairo headers\n";
-system("svn update -r 123475");
+system("svn update -r 124201");
 system ("perl Tools/Scripts/update-webkit-auxiliary-libs");
 system ("perl Tools/Scripts/update-webkit-wincairo-libs");
 
@@ -32,7 +32,7 @@ replaceLines("$webkitdir/Source/WebCore/platform/PlatformWheelEvent.h",         
                                                                                         43,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
 replaceLines("$webkitdir/Source/WebCore/platform/PlatformKeyboardEvent.h",             (40,"typedef unsigned WPARAM;","",
                                                                                         41,"typedef long LPARAM;","#if defined(_WIN64)\ntypedef unsigned __int64 WPARAM;\ntypedef __int64 LPARAM;\n#else\ntypedef unsigned WPARAM;\ntypedef long LPARAM;\n#endif"));
-replaceLines("$webkitdir/Source/WebKit2/win/WebKit2CFLite.def",                        (262,'	??1ContextDestructionObserver@WebCore@@MAE@XZ','        ??1ContextDestructionObserver@WebCore@@MEAA@XZ'));
+replaceLines("$webkitdir/Source/WebKit2/win/WebKit2CFLite.def",                        (266,'	??1ContextDestructionObserver@WebCore@@MAE@XZ','        ??1ContextDestructionObserver@WebCore@@MEAA@XZ'));
 replaceLines("$webkitdir/Tools/WinLauncher/WinLauncher.cpp",                           (231,"    DefWebKitProc = reinterpret_cast<WNDPROC>(::GetWindowLongPtr(hMainWnd, GWL_WNDPROC));","    DefWebKitProc = reinterpret_cast<WNDPROC>(::GetWindowLongPtr(hMainWnd, GWLP_WNDPROC));",
 																						232,"    ::SetWindowLongPtr(hMainWnd, GWL_WNDPROC, reinterpret_cast<LONG_PTR>(WndProc));","    ::SetWindowLongPtr(hMainWnd, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(WndProc));",
 																						317,"    DefEditProc = reinterpret_cast<WNDPROC>(GetWindowLongPtr(hURLBarWnd, GWL_WNDPROC));","    DefEditProc = reinterpret_cast<WNDPROC>(GetWindowLongPtr(hURLBarWnd, GWLP_WNDPROC));",
@@ -82,8 +82,8 @@ system("cp $fromdir/ImageDiffLauncher.vcproj           $webkitdir/Tools/DumpRend
 system("cp $fromdir/ImageDiff.vcproj                   $webkitdir/Tools/DumpRenderTree/win/ImageDiff.vcproj"                                                );#added x64 configuration, removed warning level and warnings as errors, added /MP, changed output directory
 system("cp $fromdir/DumpRenderTreeLauncher.vcproj      $webkitdir/Tools/DumpRenderTree/win/DumpRenderTreeLauncher.vcproj"                                   );#added x64 configuration, removed warning level and warnings as errors, added /MP, changed output directory
 system("cp $fromdir/DumpRenderTree.vcproj              $webkitdir/Tools/DumpRenderTree/win/DumpRenderTree.vcproj"                                           );#added x64 configuration, removed warning level and warnings as errors, added /MP, changed output directory
-system("cp $fromdir/JavaScriptCore.def                 $webkitdir/Source/JavaScriptCore/JavaScriptCore.vcproj/JavaScriptCore/JavaScriptCore.def"            );#changed decorated names to x64 versions (a lot of work!)
-system("cp $fromdir/WebKit2CFLite.def                  $webkitdir/Source/WebKit2/win/WebKit2CFLite.def"                                                     );#changed decorated names to x64 versions
+system("cp $fromdir/JavaScriptCore.def                 $webkitdir/Source/JavaScriptCore/JavaScriptCore.vcproj/JavaScriptCore/JavaScriptCore_x64.def"        );#changed decorated names to x64 versions (a lot of work!)
+system("cp $fromdir/WebKit2CFLite.def                  $webkitdir/Source/WebKit2/win/WebKit2CFLite_x64.def"                                                 );#changed decorated names to x64 versions
 system("cp $fromdir/PaintHooks.obj                     $webkitdir/Source/WebCore/plugins/win/PaintHooks.obj"                                                );#compiled assembly
 system ("mkdir $webkitdir/WebKitBuild");
 

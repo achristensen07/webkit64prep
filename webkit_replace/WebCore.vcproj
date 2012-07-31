@@ -320,8 +320,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				WarnAsError="false"
 				AdditionalIncludeDirectories=""
+				WarnAsError="false"
 				ForcedIncludeFiles=""
 			/>
 			<Tool
@@ -48276,6 +48276,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\page\DiagnosticLoggingKeys.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\page\DOMSelection.cpp"
 				>
 			</File>
@@ -80714,6 +80718,14 @@
 					RelativePath="..\rendering\style\SVGRenderStyleDefs.h"
 					>
 				</File>
+				<File
+					RelativePath="..\rendering\style\WrapShapes.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\rendering\style\WrapShapes.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="svg"
@@ -89893,6 +89905,10 @@
 			</File>
 			<File
 				RelativePath="..\dom\KeyboardEvent.h"
+				>
+			</File>
+			<File
+				RelativePath="..\dom\MemoryInstrumentation.cpp"
 				>
 			</File>
 			<File
@@ -131989,6 +132005,34 @@
 			</File>
 			<File
 				RelativePath="..\mathml\MathMLTextElement.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="testing"
+			>
+			<File
+				RelativePath="..\testing\Internals.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\testing\Internals.h"
+				>
+			</File>
+			<File
+				RelativePath="..\testing\InternalSettings.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\testing\InternalSettings.h"
+				>
+			</File>
+			<File
+				RelativePath="..\testing\MockPagePopupDriver.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\testing\MockPagePopupDriver.h"
 				>
 			</File>
 		</Filter>

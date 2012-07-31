@@ -433,6 +433,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="JavaScriptCore.def"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -498,6 +499,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="JavaScriptCore_x64.def"
 				TargetMachine="17"
 			/>
 			<Tool
@@ -560,6 +562,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="JavaScriptCore.def"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -627,6 +630,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				ModuleDefinitionFile="JavaScriptCore_x64.def"
 				TargetMachine="17"
 			/>
 			<Tool
