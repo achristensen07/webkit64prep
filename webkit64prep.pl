@@ -40,6 +40,8 @@ replaceLines("$webkitdir/Source/WebCore/platform/win/WindowMessageListener.h",  
 																						35,"typedef unsigned WPARAM;","#ifdef  _WIN64\ntypedef          __int64  intptr_t;\ntypedef unsigned __int64 uintptr_t;\n#else\ntypedef          int  intptr_t;\ntypedef unsigned int uintptr_t;\n#endif"));
 replaceLines("$webkitdir/Tools/win/DLLLauncher/DLLLauncherMain.cpp",                   (187,'    const char* entryPointName = "_dllLauncherEntryPoint@8";',"#ifdef _M_AMD64\n    const char* entryPointName = \"dllLauncherEntryPoint\";\n#else\n    const char* entryPointName = \"_dllLauncherEntryPoint\@8\";\n#endif",
 																						190,'    const char* entryPointName = "_dllLauncherEntryPoint@16";',"#ifdef _M_AMD64\n    const char* entryPointName = \"dllLauncherEntryPoint\";\n#else\n    const char* entryPointName = \"_dllLauncherEntryPoint\@16\";\n#endif"));
+replaceLines("$webkitdir/Source/WebKit/win/WebView.cpp",                               (2108,"    wcex.cbWndExtra     = 4; // 4 bytes for the IWebView pointer","    wcex.cbWndExtra     = sizeof(void *); // 4 or 8 bytes for the IWebView pointer"));
+replaceLines("$webkitdir/Source/WebKit/win/FullScreenVideoController.cpp",             (425,"    wcex.cbWndExtra = 4;","    wcex.cbWndExtra = sizeof(void *);"));																						
 
 #move new solutions
 print "moving new solutions and libraries\n";
